@@ -46,6 +46,10 @@ elif c == 2:
 elif c == 3:
     print("The result of multiplication is:", multiplication (a, b))
 elif c == 4 :
-    print("The result of division is:", division (a, b))
+    if b == 0 :
+        print("Error: Division by zero. Please restart the program and input not 0 second number")
+    else:
+        print("The result of division is:", division (a, b))
+
 else :
     print("Error: only 1 to 4 must be chosen")
