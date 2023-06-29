@@ -1,23 +1,20 @@
-# python01-hw % calculator.py
-# Welcome to the Calculator Program!
-
-# Please enter the first number: 10
-# Please enter the second number: 5
-
-# Please select an operation:
-# 1. Addition
-# 2. Subtraction
-# 3. Multiplication
-# 4. Division
+# Create a basic calculator program using Python.
 #
-# Enter your choice (1-4): 3
-
-# The result of multiplication is: 50
+# The program should allow the user to perform simple arithmetic operations on two numbers.
+#
+# Requirements:
+#
+# Prompt the user to enter two numbers.
+# Prompt the user to select an operation from the following options:
+# addition
+# subtraction
+# multiplication
+# division.
 
 print("Welcome to the Calculator Program!")
 
-a = int(input("Please enter the first number:"))
-b = int(input("Please enter the second number:"))
+a = float(input("Please enter the first number:"))
+b = float(input("Please enter the second number:"))
 
 def addition(a, b):
     return a + b
@@ -50,6 +47,5 @@ elif c == 4 :
         print("Error: Division by zero. Please restart the program and input not 0 second number")
     else:
         print("The result of division is:", division (a, b))
-
 else :
     print("Error: only 1 to 4 must be chosen")
